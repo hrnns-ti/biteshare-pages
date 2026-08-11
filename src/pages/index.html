@@ -25,10 +25,14 @@
   </script>
 </head>
 <body>
-  <main class="font-outfit">
+  <main class="
+      font-outfit flex flex-col gap-24 h-full
+      md:gap-96
+    "
+  >
 
-    <!-- header -->    
-    <nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default">
+    <!-- nav -->    
+    <nav class="bg-neutral-primary fixed w-full z-50 top-0 start-0 border-b border-default">
       <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 bg-white">
         <!-- logo -->
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -50,7 +54,7 @@
               >Home</a>
             </li>
             <li class="hover:text-blue-600">
-              <a href="#" 
+              <a href="#aboutus" 
                 class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
               >About Us</a>
             </li>
@@ -75,43 +79,173 @@
     </nav>
 
     <!-- hero section -->
-    <section class="mx-4 mt-20 flex flex-col gap-24">
-      <div class="relative w-full h-full">
+    <section class="mx-4 mt-28 flex flex-col gap-24   justify-center items-center">
+      <div class="relative w-full h-full flex flex-col">
         <img 
           src="../../assets/images/patrick-von-der-wehd-unsplash.jpg" alt="Hero Image"
-          class="rounded-lg"
+          class="
+            rounded-2xl brightness-50
+            md:w-2/3 md:self-center md:
+          "
         >
-        <h1 class="absolute -bottom-4 left-3 text-7xl font-bold text-white font-outfit tracking-wide">
+        <h1 class="
+            absolute -bottom-3 left-3 text-7xl font-bold text-white font-outfit tracking-wide
+            md:left-80 md:text-8xl md:-bottom-4
+          "
+        >
           BiteShare
+        </h1>
+        <h1 class="
+            absolute left-4 text-xl font-bold text-blue-600 font-outfit tracking-wide
+            md:left-80 md:text-3xl md:-bottom-9
+          "
+        >
+          Bite by bite for a better world
         </h1>
       </div>
     </section>
     
     
     <!-- about us section -->
-    <section class="bg-blue-500">
+    <section class="bg-blue-500 flex flex-col gap-32 justify-center relative" id="aboutus">
       <!-- transition -->
-      <img class="pointer-events-none mt-24" src="../../assets/system/stacked-steps-haikei.svg" alt="transition">
+      <img class="pointer-events-none" src="../../assets/system/stacked-waves-haikei.svg" alt="transition">
+      <img 
+      src="../../assets/images/joel-muniz-3k3l2brxmwQ-unsplash.jpg" alt="image" 
+      class="absolute opacity-20 w-fit h-57 bottom-11 left-0 mix-blend-overlay md:hidden"
+      >
+      <img 
+      src="../../assets/images/ismael-paramo-Cns0h4ypRyA-unsplash.jpg" alt="image" 
+      class="absolute opacity-20 h-50 top-10 left-0 mix-blend-overlay md:hidden"
+      >
+      <img 
+      src="../../assets/images/khalil-radi-BlzrvWb1_vQ-unsplash.jpg" alt="image" 
+      class="absolute opacity-20 h-50 left-0 mix-blend-overlay"
+      >
       
       <!-- description -->
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni iusto dolores officia consectetur inventore laudantium, quidem reiciendis ab aliquid minus obcaecati saepe facilis dolor harum nemo sapiente eius modi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni iusto dolores officia consectetur inventore laudantium, quidem reiciendis ab aliquid minus obcaecati saepe facilis dolor harum nemo sapiente eius modi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni iusto dolores officia consectetur inventore laudantium, quidem reiciendis ab aliquid minus obcaecati saepe facilis dolor harum nemo sapiente eius modi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni iusto dolores officia consectetur inventore laudantium, quidem reiciendis ab aliquid minus obcaecati saepe facilis dolor harum nemo sapiente eius modi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni iusto dolores officia consectetur inventore laudantium, quidem reiciendis ab aliquid minus obcaecati saepe facilis dolor harum nemo sapiente eius modi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magni iusto dolores officia consectetur inventore laudantium, quidem reiciendis ab aliquid minus obcaecati saepe facilis dolor harum nemo sapiente eius modi.</p>
+      <div class="flex flex-col gap-20 z-20">
+        <h1 class="self-center text-3xl font-bold text-white">About Us</h1>
+        <div class="
+            flex flex-col gap-16
+            md:flex-row md:justify-center  md:items-center
+          "
+        >
+          <div class="
+              mx-18 p-8 bg-white w-4/5 rounded-r-xl relative 
+              md:w-1/3 md:rounded-xl md:self-center md:min-h-48
+            "
+          >
+            <svg class="absolute -top-8 left-5" fill="#ffffff" width="40px" height="40px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3 7C1.895 7 1 7.895 1 9L1 21 A 1.0001 1.0001 0 1 0 1 23L3 23L3.0507812 23C3.2981763 24.685411 4.7500663 26 6.5 26C8.2499335 26 9.7018235 24.685411 9.9492188 23L21.050781 23C21.298177 24.685411 22.750067 26 24.5 26C26.249936 26 27.701837 24.685418 27.949219 23L29 23 A 1.0001 1.0001 0 1 0 29 21L29 16C29 14.895 28.105 14 27 14L22 14C21.448 14 21 13.552 21 13L21 10C21 9.448 21.448 9 22 9L24.857422 9L24.519531 8.2128906C24.204531 7.4778906 23.481641 7 22.681641 7L3 7 z M 5 9.5 A 1.5 1.5 0 0 0 6.5 11 A 1.5 1.5 0 0 0 8 9.5 A 1.5 1.5 0 0 0 9.5 11 A 1.5 1.5 0 0 0 11 9.5 A 1.5 1.5 0 0 0 12.5 11 A 1.5 1.5 0 0 0 14 9.5 A 1.5 1.5 0 0 0 15.5 11 A 1.5 1.5 0 0 0 17 9.5 A 1.5 1.5 0 0 0 18.5 11 A 1.5 1.5 0 0 0 19 10.912109L19 15C19 15.552 18.552 16 18 16L4 16C3.448 16 3 15.552 3 15L3 10.912109 A 1.5 1.5 0 0 0 3.5 11 A 1.5 1.5 0 0 0 5 9.5 z M 6.5 21C7.3402718 21 8 21.659728 8 22.5C8 23.340272 7.3402718 24 6.5 24C5.6597282 24 5 23.340272 5 22.5C5 21.659728 5.6597282 21 6.5 21 z M 24.5 21C25.340272 21 26 21.659728 26 22.5C26 23.340272 25.340272 24 24.5 24C23.659728 24 23 23.340272 23 22.5C23 21.659728 23.659728 21 24.5 21 z"></path></g></svg>
+            <p class="text-right font-semibold text-blue-500">BiteShare connects generous donors with local communities to reduce food waste and combat hunger. Aligned with the Sustainable Development Goals, the platform empowers users to share surplus food and track the real-world ecological impact of every meal donated.</p>
+          </div>
+
+          <div class="
+              mx-18 p-8 bg-white w-4/5 self-end rounded-l-xl relative flex
+              md:w-1/3 md:rounded-xl md:self-center md:min-h-48 md:items-center
+            "
+          >
+            <svg class="absolute -top-8 right-20" fill="#ffffff" width="40px" height="40px" viewBox="0 -64 640 640" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M128 96c26.5 0 48-21.5 48-48S154.5 0 128 0 80 21.5 80 48s21.5 48 48 48zm384 0c26.5 0 48-21.5 48-48S538.5 0 512 0s-48 21.5-48 48 21.5 48 48 48zm125.7 372.1l-44-110-41.1 46.4-2 18.2 27.7 69.2c5 12.5 17 20.1 29.7 20.1 4 0 8-.7 11.9-2.3 16.4-6.6 24.4-25.2 17.8-41.6zm-34.2-209.8L585 178.1c-4.6-20-18.6-36.8-37.5-44.9-18.5-8-39-6.7-56.1 3.3-22.7 13.4-39.7 34.5-48.1 59.4L432 229.8 416 240v-96c0-8.8-7.2-16-16-16H240c-8.8 0-16 7.2-16 16v96l-16.1-10.2-11.3-33.9c-8.3-25-25.4-46-48.1-59.4-17.2-10-37.6-11.3-56.1-3.3-18.9 8.1-32.9 24.9-37.5 44.9l-18.4 80.2c-4.6 20 .7 41.2 14.4 56.7l67.2 75.9 10.1 92.6C130 499.8 143.8 512 160 512c1.2 0 2.3-.1 3.5-.2 17.6-1.9 30.2-17.7 28.3-35.3l-10.1-92.8c-1.5-13-6.9-25.1-15.6-35l-43.3-49 17.6-70.3 6.8 20.4c4.1 12.5 11.9 23.4 24.5 32.6l51.1 32.5c4.6 2.9 12.1 4.6 17.2 5h160c5.1-.4 12.6-2.1 17.2-5l51.1-32.5c12.6-9.2 20.4-20 24.5-32.6l6.8-20.4 17.6 70.3-43.3 49c-8.7 9.9-14.1 22-15.6 35l-10.1 92.8c-1.9 17.6 10.8 33.4 28.3 35.3 1.2.1 2.3.2 3.5.2 16.1 0 30-12.1 31.8-28.5l10.1-92.6 67.2-75.9c13.6-15.5 19-36.7 14.4-56.7zM46.3 358.1l-44 110c-6.6 16.4 1.4 35 17.8 41.6 16.8 6.6 35.1-1.7 41.6-17.8l27.7-69.2-2-18.2-41.1-46.4z"></path></g></svg>
+            <p class="text-left font-semibold text-blue-500">We believe in a world with <span class="text-[#DDA639]">zero hunger</span> and <span class="text-[#BF8B2E]">responsible consumption.</span> Join a growing community dedicated to building a sustainable future where no good food ever goes to the landfill.</p>
+          </div>
+        </div>
+        <a href="./description.html" class="self-center border-2 text-blue-500 text-xl bg-white px-6 py-2 rounded font-semibold hover:bg-blue-400 hover:text-white md:mt-20">Detail</a>
+      </div>
+      
+      <!-- transition -->
+      <img class="pointer-events-none" src="../../assets/system/stacked-waves-haikei-reversed.svg" alt="transition" class="rotate-180">
+    </section>
+    
+    <!-- services section -->
+    <section class="flex flex-col mx-4 md:mx-12 md:gap-12" id="service">
+      <h1 class="self-center text-3xl font-bold text-blue-500 my-12">Our Service</h1>
+
+      <!-- service -->
+      <div class="flex flex-col gap-12 w-full md:flex-row items-center justify-evenly">
+        <div class="flex flex-col gap-3 md:w-1/3 h-fit">
+          <a href="./signin.html" class="h-full gap-2 flex flex-col">
+            <img 
+              src="../../assets/images/ismael-paramo-Cns0h4ypRyA-unsplash.jpg" alt="Hero Image"
+              class="rounded-2xl hover:opacity-80 hover:scale-95 transition-all"
+            >
+          </a>
+          <div class="flex flex-row z-20  justify-between items-center">
+            <h1 class="text-blue-500 py-3 text-2xl font-semibold">Seamless Food Donation</h1>
+            <a href="../pages/signin.html" class="bg-blue-500 py-2 px-3 rounded text-white hover:bg-blue-400">Details</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-3 md:w-1/3 h-fit">
+          <a href="./signin.html" class="h-full gap-2 flex flex-col">
+            <img 
+              src="../../assets/images/ashraf-ali-unsplash.jpg" alt="Hero Image"
+              class="rounded-2xl hover:opacity-80 hover:scale-95 transition-all"
+            >
+          </a>
+          <div class="flex flex-row z-20  justify-between items-center">
+            <h1 class="text-blue-500 py-3 text-2xl font-semibold">Ecological Impact Calculator</h1>
+            <a href="#calculator" class="bg-blue-500 py-2 px-3 rounded text-white hover:bg-blue-400">Details</a>
+          </div>
+        </div>
       </div>
     </section>
     
-    <!-- hero section -->
-    <section></section>
+    <!-- gallery section -->
+    <section 
+      id="gallery"
+      class="flex flex-col my-12 relative md:gap-20"
+    >
+      <div class="w-full -left-1/4 h-screen bg-blue-500 rounded-full absolute -z-20"></div>
+      <img src="../../assets/system/li-zhang-DvwKzaY6Xm8-unsplash.jpg" alt="system" class="pointer-events-none w-full opacity-10 -left-1/4 h-screen bg-blue-500 rounded-full absolute -z-10">
+      <h1 class="font-semibold text-3xl p-8 text-white md:self-center">Gallery</h1>
+      
+      <div class="
+        flex flex-col gap-4 self-center w-full
+        md:w-3/5 md:grid md:grid-cols-4 md:grid-rows-4 md:gap-6 
+        "
+      >
+        <img 
+          src="../../assets/images/angels-for-humanity-jTiIlGMPpWI-unsplash.jpg" alt="gallery-photo"
+          class="md:row-span-2 w-96 md:w-full md:h-full md:object-cover self-center rounded-xl border-8 md:border-none border-blue-500"
+        >
+        <img 
+          src="../../assets/images/patrick-von-der-wehd-unsplash.jpg" alt="gallery-photo"
+          class="md:row-span-2 w-96 md:w-full md:h-full md:object-cover self-center rounded-xl border-8 border-blue-500 md:border-none"
+        >
+        <img 
+          src="../../assets/images/melanie-lim-Y2eza9Q-ax0-unsplash.jpg" alt="gallery-photo"
+          class="md:col-span-2 md:row-span-2 w-96 md:w-full md:h-full md:object-cover self-center rounded-xl border-8 border-blue-500 md:border-none"
+        >
+        <img 
+        src="../../assets/images/khalil-radi-BlzrvWb1_vQ-unsplash.jpg" alt="gallery-photo"
+        class="md:col-span-2 md:row-span-2 md:row-start-3 w-96 md:w-full md:h-full md:object-cover self-center rounded-xl border-8 border-blue-500  md:border-none"
+        >
+        <img 
+        src="../../assets/images/joel-muniz-eWKSid7Mg60-unsplash.jpg" alt="gallery-photo"
+        class="md:row-span-2 md:col-start-3 md:row-start-3 w-96 md:w-full md:h-full md:object-cover self-center rounded-xl border-8 border-blue-500 hidden md:block md:border-none"
+        >
+        <img 
+          src="../../assets/images/michael-ali-PuwTnaVGJYA-unsplash.jpg" alt="gallery-photo"
+          class="md:row-span-2 md:col-start-4 md:row-start-3 w-96 md:w-full md:h-full md:object-cover self-center rounded-xl border-8 border-blue-500 hidden md:block md:border-none"
+        >
+      </div>
+    </section>
     
-    <!-- hero section -->
-    <section></section>
-    
-    <!-- hero section -->
-    <section></section>
+    <!-- end section -->
+    <section id="end" class="flex flex-col my-20">
+      <div class="flex flex-col gap-6">
+        <p class="font-semibold flex flex-col self-center items-center text-blue-500 text-3xl">
+          <span>Good food shouldn't go to waste.</span>
+          <span class="text-xl">Be part of us and help build a zero-hunger future.</span>
+        </p>
+        <a href="./signup.html" class="self-center bg-blue-500 py-2 px-4 font-semibold text-white rounded hover:bg-blue-400">Join Us</a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-blue-500 flex flex-col min-h-24 text-white text-sm items-center justify-center">
+      <p>&copy; 2026 BiteShare by Haerunnas. All rights reserved.</p>
+    </footer>
   </main>
 
   <!-- script -->
