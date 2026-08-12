@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Services - Biteshare</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -24,10 +30,10 @@
     <nav class="bg-neutral-primary fixed w-full z-50 top-0 start-0 border-b border-default">
       <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 bg-white">
         <!-- logo -->
-        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none" id="Logo"><g id="logomark"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.5557 11.6853C23.9112 10.5865 21.9778 10 20 10V0C23.9556 0 27.8224 1.17298 31.1114 3.37061C34.4004 5.56823 36.9638 8.69181 38.4776 12.3463C39.9913 16.0008 40.3874 20.0222 39.6157 23.9018C38.844 27.7814 36.9392 31.3451 34.1421 34.1421C31.3451 36.9392 27.7814 38.844 23.9018 39.6157C20.0222 40.3874 16.0008 39.9913 12.3463 38.4776C8.69181 36.9638 5.56823 34.4004 3.37061 31.1114C1.17298 27.8224 0 23.9556 0 20H10C10 21.9778 10.5865 23.9112 11.6853 25.5557C12.7841 27.2002 14.3459 28.4819 16.1732 29.2388C18.0004 29.9957 20.0111 30.1937 21.9509 29.8078C23.8907 29.422 25.6725 28.4696 27.0711 27.0711C28.4696 25.6725 29.422 23.8907 29.8078 21.9509C30.1937 20.0111 29.9957 18.0004 29.2388 16.1732C28.4819 14.3459 27.2002 12.7841 25.5557 11.6853Z" fill="#007DFC"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10 4.33125e-06C10 1.31322 9.74135 2.61358 9.2388 3.82683C8.73625 5.04009 7.99965 6.14248 7.07106 7.07107C6.14249 7.99966 5.04009 8.73625 3.82683 9.2388C2.61357 9.74134 1.31322 10 4.3711e-07 10L0 20C2.62644 20 5.22715 19.4827 7.65368 18.4776C10.0802 17.4725 12.285 15.9993 14.1421 14.1421C15.9993 12.285 17.4725 10.0802 18.4776 7.65367C19.4827 5.22715 20 2.62643 20 0L10 4.33125e-06Z" fill="#007DFC"/></g></svg>
         </a>
-  
+
         <!-- dropdown button -->
         <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -43,7 +49,7 @@
               >Home</a>
             </li>
             <li class="hover:text-blue-600">
-              <a href="./description.html" 
+              <a href="./pages/description.html" 
                 class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
               >About Us</a>
             </li>
@@ -51,6 +57,11 @@
               <a href="./service.html" 
                 class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
               >Services</a>
+            </li>
+            <li class="hover:text-blue-600">
+              <a href="./gallery.html" 
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+              >Gallery</a>
             </li>
             <li class="hover:text-blue-600">
               <a href="./contact.html" 
@@ -87,15 +98,15 @@
         <img src="../assets/images/angels-for-humanity-jTiIlGMPpWI-unsplash.jpg" alt="Calculator" class="rounded-lg">
         <h1 class="font-semibold text-lg">Surplus Food Distribution</h1>
         <p class="">We make it incredibly easy for individuals, restaurants, and local businesses to donate their excess perfectly-good food. Our platform acts as a digital bridge, safely connecting your generosity directly with nearby shelters and communities in need. You manage the food, we streamline the connection.</p>
-        <a href="service.html" class="self-end text-sm font-semibold bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Join Us</a>
+        <a href="./signin.html" class="self-end text-sm font-semibold bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Join Us</a>
       </div>
 
       <!-- service 2 -->
       <div class="p-6 bg-white text-blue-500 flex flex-col gap-6 rounded-xl md:w-1/2">
         <img src="../assets/images/ashraf-ali-unsplash.jpg" alt="Calculator" class="rounded-lg">
-        <h1 class="font-semibold text-lg">Surplus Food Distribution</h1>
+        <h1 class="font-semibold text-lg">Real-Time Ecological Calculator</h1>
         <p class="">Every meal saved is a victory for our planet. We built an interactive, real-time calculator to help you visualize the direct environmental benefits of your actions. By preventing food from ending up in landfills, you are actively participating in global sustainability efforts.</p>
-        <a href="calculator.html" class="self-end text-sm font-semibold bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Try Ecological Calculator</a>
+        <a href="./calculator.html" class="self-end text-sm font-semibold bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Try Ecological Calculator</a>
       </div>
     </section>
 
