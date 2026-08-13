@@ -24,57 +24,153 @@
         }
   </script>
 </head>
-<body>
-  <nav class="bg-neutral-primary fixed w-full z-50 top-0 start-0 border-b border-default">
-      <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 bg-white">
-        <!-- logo -->
-        <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none" id="Logo"><g id="logomark"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.5557 11.6853C23.9112 10.5865 21.9778 10 20 10V0C23.9556 0 27.8224 1.17298 31.1114 3.37061C34.4004 5.56823 36.9638 8.69181 38.4776 12.3463C39.9913 16.0008 40.3874 20.0222 39.6157 23.9018C38.844 27.7814 36.9392 31.3451 34.1421 34.1421C31.3451 36.9392 27.7814 38.844 23.9018 39.6157C20.0222 40.3874 16.0008 39.9913 12.3463 38.4776C8.69181 36.9638 5.56823 34.4004 3.37061 31.1114C1.17298 27.8224 0 23.9556 0 20H10C10 21.9778 10.5865 23.9112 11.6853 25.5557C12.7841 27.2002 14.3459 28.4819 16.1732 29.2388C18.0004 29.9957 20.0111 30.1937 21.9509 29.8078C23.8907 29.422 25.6725 28.4696 27.0711 27.0711C28.4696 25.6725 29.422 23.8907 29.8078 21.9509C30.1937 20.0111 29.9957 18.0004 29.2388 16.1732C28.4819 14.3459 27.2002 12.7841 25.5557 11.6853Z" fill="#007DFC"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10 4.33125e-06C10 1.31322 9.74135 2.61358 9.2388 3.82683C8.73625 5.04009 7.99965 6.14248 7.07106 7.07107C6.14249 7.99966 5.04009 8.73625 3.82683 9.2388C2.61357 9.74134 1.31322 10 4.3711e-07 10L0 20C2.62644 20 5.22715 19.4827 7.65368 18.4776C10.0802 17.4725 12.285 15.9993 14.1421 14.1421C15.9993 12.285 17.4725 10.0802 18.4776 7.65367C19.4827 5.22715 20 2.62643 20 0L10 4.33125e-06Z" fill="#007DFC"/></g></svg>
-        </a>
-
-        <!-- dropdown button -->
-        <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
-        </button>
+<body class="bg-blue-500 font-outfit">
+  <main class="flex flex-col">
+    <!-- nav -->
+    <nav class="bg-neutral-primary fixed w-full z-50 top-0 start-0 border-b border-default">
+        <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 bg-white">
+          <!-- logo -->
+          <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none" id="Logo"><g id="logomark"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.5557 11.6853C23.9112 10.5865 21.9778 10 20 10V0C23.9556 0 27.8224 1.17298 31.1114 3.37061C34.4004 5.56823 36.9638 8.69181 38.4776 12.3463C39.9913 16.0008 40.3874 20.0222 39.6157 23.9018C38.844 27.7814 36.9392 31.3451 34.1421 34.1421C31.3451 36.9392 27.7814 38.844 23.9018 39.6157C20.0222 40.3874 16.0008 39.9913 12.3463 38.4776C8.69181 36.9638 5.56823 34.4004 3.37061 31.1114C1.17298 27.8224 0 23.9556 0 20H10C10 21.9778 10.5865 23.9112 11.6853 25.5557C12.7841 27.2002 14.3459 28.4819 16.1732 29.2388C18.0004 29.9957 20.0111 30.1937 21.9509 29.8078C23.8907 29.422 25.6725 28.4696 27.0711 27.0711C28.4696 25.6725 29.422 23.8907 29.8078 21.9509C30.1937 20.0111 29.9957 18.0004 29.2388 16.1732C28.4819 14.3459 27.2002 12.7841 25.5557 11.6853Z" fill="#007DFC"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10 4.33125e-06C10 1.31322 9.74135 2.61358 9.2388 3.82683C8.73625 5.04009 7.99965 6.14248 7.07106 7.07107C6.14249 7.99966 5.04009 8.73625 3.82683 9.2388C2.61357 9.74134 1.31322 10 4.3711e-07 10L0 20C2.62644 20 5.22715 19.4827 7.65368 18.4776C10.0802 17.4725 12.285 15.9993 14.1421 14.1421C15.9993 12.285 17.4725 10.0802 18.4776 7.65367C19.4827 5.22715 20 2.62643 20 0L10 4.33125e-06Z" fill="#007DFC"/></g></svg>
+          </a>
+  
+          <!-- dropdown button -->
+          <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+          </button>
+          
+          <!-- dropdown -->
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+              <li class="hover:text-blue-600">
+                <a href="../index.html" 
+                class="block py-2 px-3 text-heading bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page"
+                >Home</a>
+              </li>
+              <li class="hover:text-blue-600">
+                <a href="./description.html" 
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                >About Us</a>
+              </li>
+              <li class="hover:text-blue-600">
+                <a href="./service.html" 
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                >Services</a>
+              </li>
+              <li class="hover:text-blue-600">
+                <a href="./gallery.html" 
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                >Gallery</a>
+              </li>
+              <li class="hover:text-blue-600">
+                <a href="./contact.html" 
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                >Contact Us</a>
+              </li>
+              <li class="hover:text-blue-600">
+                <a href="./signin.html" 
+                  class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+                >Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- main section -->
+    <section class="mt-48">
+      <div class="flex flex-col md:grid md:grid-cols-5 md:grid-rows-3 h-full w-full px-4 gap-4">
+        <div class="rounded md:row-span-3 bg-white flex flex-col gap-4 p-6">
+          <h1 class="text-xl font-bold text-blue-500">Ecological Impact Calculator</h1>
+          <p  class="text-blue-400 font-semibold">Curious about the real-world impact of your donation? Enter the number of food portions you plan to share, and our calculator will instantly translate your generosity into measurable environmental benefits.</p>
+        </div>
         
-        <!-- dropdown -->
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
-            <li class="hover:text-blue-600">
-              <a href="../index.html" 
-              class="block py-2 px-3 text-heading bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page"
-              >Home</a>
-            </li>
-            <li class="hover:text-blue-600">
-              <a href="./description.html" 
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-              >About Us</a>
-            </li>
-            <li class="hover:text-blue-600">
-              <a href="./service.html" 
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-              >Services</a>
-            </li>
-            <li class="hover:text-blue-600">
-              <a href="./gallery.html" 
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-              >Gallery</a>
-            </li>
-            <li class="hover:text-blue-600">
-              <a href="./contact.html" 
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-              >Contact Us</a>
-            </li>
-            <li class="hover:text-blue-600">
-              <a href="./signin.html" 
-                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
-              >Sign In</a>
-            </li>
-          </ul>
+        <div class="rounded md:col-span-3 md:row-span-2 bg-white flex flex-col gap-4 p-6">
+          <form action="" class="flex flex-col gap-4">
+            <div class="flex flex-col">
+              <h1 class="font-semibold text-blue-500">Ready-to-Eat Portions</h1>
+              <input 
+                type="number" name="portion" id="portionInput" min="0"
+                class="border-2 border-blue-300 rounded px-2 active:ring-2 outline-none"
+                placeholder="0"
+              >
+              <p class="my-1 text-sm opacity-60">For boxed meals, breads, or individual servings.</p>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-semibold text-blue-500">Bulk Food (Weight in Kg)</h1>
+              <input 
+                type="number" name="Weight" id="weightInput" min="0"
+                class="border-2 border-blue-300 rounded px-2 active:ring-2 outline-none"
+                placeholder="0"
+              >
+              <p class="my-1 text-sm opacity-60">For raw ingredients, fruits, or large batches of solid food.</p>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="font-semibold text-blue-500">Liquids & Soups (Volume in Liters)</h1>
+              <input 
+                type="number" name="liquid" id="liquidInput" min="0"
+                class="border-2 border-blue-300 rounded px-2 active:ring-2 outline-none"
+                placeholder="0"
+              >
+              <p class="my-1 text-sm opacity-60">For milk, soups, or bulk beverages.</p>
+            </div>
+
+            <button type="button" id="calculateBtn" class="bg-blue-500 hover:bg-blue-400 py-2 mt-8 text-white font-semibold rounded">Calculate</button>
+          </form>
+        </div>
+        
+        <div class="rounded md:col-span-3 md:col-start-2 row-start-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white rounded p-6">
+            <h1 class="font-semibold text-blue-500">Total Food Waste Saved</h1>
+            <div class="flex flex-row gap-3">
+              <p id="wasteSaved">0</p>
+              <p>Kilograms</p>
+            </div>
+          </div>
+          <div class="bg-white rounded p-6">
+            <h1 class="font-semibold text-blue-500">Total Carbon Saved</h1>
+            <div class="flex flex-row gap-3">
+              <p id="carbonSaved">0</p>
+              <p>kgCO2e</p>
+            </div>
+          </div>
+          <div class="bg-white rounded p-6">
+            <h1 class="font-semibold text-blue-500">Total Water Saved</h1>
+            <div class="flex flex-row gap-3">
+              <p id="waterSaved">0</p>
+              <p>Liters</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="rounded md:row-span-3 md:col-start-5 row-start-1 bg-white p-6">
+          <h1 class="font-bold text-blue-500 text-lg">Real-World Impact</h1>
+  
+          <!-- images -->
+          <img 
+            id="impactImage" 
+            src="https://images.unsplash.com/photo-1571987530791-58e3e7744d99?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Impact Illustration" 
+            class="w-full h-48 object-cover rounded shadow-sm transition-opacity duration-500"
+          >
+          
+          <!-- text -->
+          <div class="flex flex-col gap-2 mt-2">
+            <h2 id="impactTitle" class="font-bold text-gray-800">Let's calculate!</h2>
+            <p id="impactDesc" class="text-sm text-gray-600">Enter your donation details to see how many plates you can fill and the resources you save.</p>
+          </div>
         </div>
       </div>
-    </nav>
-  Calculator
+    </section>
+    
+    <!-- footer -->
+    <footer class="bg-white flex flex-col min-h-12 text-blue-500 text-sm md:fixed bottom-0 w-full items-center justify-center">
+      <p>&copy; 2026 BiteShare by Haerunnas. All rights reserved.</p>
+    </footer>
+
+    <script src="../script/index.js"></script>
+    <script src="../script/calculator.js"></script>
+  </main>
 </body>
 </html>
