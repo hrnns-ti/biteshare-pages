@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign In - Biteshare</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,15 @@
         }
   </script>
 </head>
-<body>
+<body class="font-outfit relative">
+
+  <!-- decor -->
+  <img 
+    src="../assets/system/hirzul-maulana-Qjau9gKeJSQ-unsplash.jpg" 
+    alt="BiteShare Auth Banner" 
+    class="absolute inset-0 w-full h-full object-cover opacity-10 -z-20"
+  >
+
   <!-- nav -->
   <nav class="bg-neutral-primary fixed w-full z-50 top-0 start-0 border-b border-default">
       <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 bg-white">
@@ -75,7 +83,89 @@
           </ul>
         </div>
       </div>
-    </nav>
-  Sign In
+  </nav>
+  
+  <section class="min-h-screen flex items-center justify-center p-4 pt-24">
+    <div class="max-w-4xl w-full bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden min-h-[500px]">
+      
+      <!-- left side - form section -->
+      <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-blue-500 mb-2">Welcome Back!</h2>
+          <p class="text-gray-500 text-sm">Please enter your details to sign in to your account.</p>
+        </div>
+
+        <form id="signInForm" class="flex flex-col gap-4">
+          <!-- email input -->
+          <div class="flex flex-col">
+            <label for="email" class="font-semibold text-gray-700 text-sm mb-1">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none transition-all bg-gray-50 focus:bg-white"
+              placeholder="john@example.com"
+            >
+          </div>
+
+          <!-- password input -->
+          <div class="flex flex-col">
+            <label for="password" class="font-semibold text-gray-700 text-sm mb-1">Password</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              required
+              class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none transition-all bg-gray-50 focus:bg-white"
+              placeholder="••••••••"
+            >
+          </div>
+
+          <!-- forgot password -->
+          <div class="flex justify-end mt-1">
+            <a href="./forgot.html" class="text-sm text-blue-500 hover:text-blue-600 font-medium">Forgot Password?</a>
+          </div>
+
+          <!-- submit button -->
+          <button 
+            type="submit" 
+            class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 rounded-lg mt-2 transition-all shadow-md active:scale-[0.98]"
+          >
+            Sign In
+          </button>
+        </form>
+
+        <!-- Toggle to Sign Up -->
+        <p class="text-center text-sm text-gray-600 mt-8">
+          Don't have an account? 
+          <a href="signup.html" class="text-blue-500 font-bold hover:underline">Sign Up</a>
+        </p>
+      </div>
+
+      <!-- right side - image -->
+      <div class="hidden md:block md:w-1/2 relative bg-blue-500">
+        <img 
+          src="https://images.unsplash.com/photo-1644726270363-e746b37b482b?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt="BiteShare Auth Banner" 
+          class="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8 text-white">
+          <h3 class="text-2xl font-bold mb-4">Join the Movement</h3>
+          <p class="text-blue-100 text-sm leading-relaxed">
+            Every portion you share brings us one step closer to a zero-waste, zero-hunger world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-white flex flex-col min-h-12 text-blue-500 text-sm items-center justify-center absolute bottom-0 w-full">
+    <p>&copy; 2026 BiteShare by Haerunnas. All rights reserved.</p>
+  </footer>
+
+  <script src="../script/index.js"></script>
+  <script src="../script/auth.js"></script>
 </body>
 </html>

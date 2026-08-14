@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Biteshare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'], 
+                        outfit: ['Outfit', 'sans-serif'], 
+                    }
+                }
+            }
+        }
+  </script>
+</head>
+<body class="font-outfit relative">
+
+  <!-- decor -->
+  <img 
+    src="../assets/system/hirzul-maulana-Qjau9gKeJSQ-unsplash.jpg" 
+    alt="BiteShare Auth Banner" 
+    class="absolute inset-0 w-full h-full object-cover opacity-10 -z-20"
+  >
+
+  <!-- nav -->
+  <nav class="bg-neutral-primary fixed w-full z-50 top-0 start-0 border-b border-default">
+      <div class="max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 bg-white">
+        <!-- logo -->
+        <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none" id="Logo"><g id="logomark"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.5557 11.6853C23.9112 10.5865 21.9778 10 20 10V0C23.9556 0 27.8224 1.17298 31.1114 3.37061C34.4004 5.56823 36.9638 8.69181 38.4776 12.3463C39.9913 16.0008 40.3874 20.0222 39.6157 23.9018C38.844 27.7814 36.9392 31.3451 34.1421 34.1421C31.3451 36.9392 27.7814 38.844 23.9018 39.6157C20.0222 40.3874 16.0008 39.9913 12.3463 38.4776C8.69181 36.9638 5.56823 34.4004 3.37061 31.1114C1.17298 27.8224 0 23.9556 0 20H10C10 21.9778 10.5865 23.9112 11.6853 25.5557C12.7841 27.2002 14.3459 28.4819 16.1732 29.2388C18.0004 29.9957 20.0111 30.1937 21.9509 29.8078C23.8907 29.422 25.6725 28.4696 27.0711 27.0711C28.4696 25.6725 29.422 23.8907 29.8078 21.9509C30.1937 20.0111 29.9957 18.0004 29.2388 16.1732C28.4819 14.3459 27.2002 12.7841 25.5557 11.6853Z" fill="#007DFC"/><path fill-rule="evenodd" clip-rule="evenodd" d="M10 4.33125e-06C10 1.31322 9.74135 2.61358 9.2388 3.82683C8.73625 5.04009 7.99965 6.14248 7.07106 7.07107C6.14249 7.99966 5.04009 8.73625 3.82683 9.2388C2.61357 9.74134 1.31322 10 4.3711e-07 10L0 20C2.62644 20 5.22715 19.4827 7.65368 18.4776C10.0802 17.4725 12.285 15.9993 14.1421 14.1421C15.9993 12.285 17.4725 10.0802 18.4776 7.65367C19.4827 5.22715 20 2.62643 20 0L10 4.33125e-06Z" fill="#007DFC"/></g></svg>
+        </a>
+
+        <!-- dropdown button -->
+        <button id="menu-toggle" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+        </button>
+        
+        <!-- dropdown -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+            <li class="hover:text-blue-600">
+              <a href="../index.html" 
+              class="block py-2 px-3 text-heading bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page"
+              >Home</a>
+            </li>
+            <li class="hover:text-blue-600">
+              <a href="./description.html" 
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+              >About Us</a>
+            </li>
+            <li class="hover:text-blue-600">
+              <a href="./service.html" 
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+              >Services</a>
+            </li>
+            <li class="hover:text-blue-600">
+              <a href="./gallery.html" 
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+              >Gallery</a>
+            </li>
+            <li class="hover:text-blue-600">
+              <a href="./contact.html" 
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+              >Contact Us</a>
+            </li>
+            <li class="hover:text-blue-600">
+              <a href="./signin.html" 
+                class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent"
+              >Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  
+  <section class="min-h-screen flex items-center justify-center p-4 pt-24">
+    <div class="max-w-4xl w-full bg-white rounded-2xl shadow-xl flex flex-col md:flex-row overflow-hidden min-h-[500px]">
+      
+      <!-- left side - form section -->
+      <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-blue-500 mb-2">Create an Account</h2>
+          <p class="text-gray-500 text-sm">Join us to start sharing and reducing food waste.</p>
+        </div>
+
+        <form id="signUpForm" class="flex flex-col gap-4">
+          <!-- full name -->
+          <div class="flex flex-col">
+            <label for="name" class="font-semibold text-gray-700 text-sm mb-1">Full Name</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="fullname" 
+              required
+              class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none transition-all bg-gray-50 focus:bg-white"
+              placeholder="John Doe"
+            >
+          </div>
+
+          <!-- email -->
+          <div class="flex flex-col">
+            <label for="email" class="font-semibold text-gray-700 text-sm mb-1">Email Address</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none transition-all bg-gray-50 focus:bg-white"
+              placeholder="john@example.com"
+            >
+          </div>
+
+          <!-- password -->
+          <div class="flex flex-col">
+            <label for="password" class="font-semibold text-gray-700 text-sm mb-1">Password</label>
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              required
+              class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none transition-all bg-gray-50 focus:bg-white"
+              placeholder="••••••••"
+            >
+          </div>
+
+          <!-- confirm password -->
+          <div class="flex flex-col">
+            <label for="confirmPassword" class="font-semibold text-gray-700 text-sm mb-1">Confirm Password</label>
+            <input 
+              type="password" 
+              id="confirmPassword" 
+              name="passwordMatch" 
+              required
+              class="border border-gray-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-blue-500 outline-none transition-all bg-gray-50 focus:bg-white"
+              placeholder="••••••••"
+            >
+          </div>
+
+          <!-- submit -->
+          <button 
+            type="submit" 
+            class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-3 px-4 rounded-lg mt-2 transition-all shadow-md active:scale-[0.98]"
+          >
+            Sign Up
+          </button>
+        </form>
+
+        <!-- toggle to sign in -->
+        <p class="text-center text-sm text-gray-600 mt-8">
+          Already have an account? 
+          <a href="./signin.html" class="text-blue-500 font-bold hover:underline">Sign In</a>
+        </p>
+      </div>
+
+      <!-- right side - image -->
+      <div class="hidden md:block md:w-1/2 relative bg-blue-500">
+        <img 
+          src="https://images.unsplash.com/photo-1644726270363-e746b37b482b?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt="BiteShare Auth Banner" 
+          class="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8 text-white">
+          <h3 class="text-2xl font-bold mb-4">Join the Movement</h3>
+          <p class="text-blue-100 text-sm leading-relaxed">
+            Every portion you share brings us one step closer to a zero-waste, zero-hunger world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-white flex flex-col min-h-12 text-blue-500 text-sm items-center justify-center absolute bottom-0 w-full">
+    <p>&copy; 2026 BiteShare by Haerunnas. All rights reserved.</p>
+  </footer>
+
+  <script src="../script/index.js"></script>
+  <script src="../script/auth.js"></script>
+</body>
+</html>
