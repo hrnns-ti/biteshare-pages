@@ -19,10 +19,12 @@ calculateBtn.addEventListener('click', function(event) {
   const weight = Number(weightInput.value) || 0;
   const liquid = Number(liquidInput.value) || 0;
 
+  // rumus
   const totalKg = (portion * .5) + weight + (liquid * 1);
   const carbonSaved = totalKg * 2.5;
   const waterSaved = totalKg * 1000;
 
+  // konversi hasil rumus jadi string dengan display 1 digit behind comma symbols
   wasteSaved.textContent = totalKg.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   totalCarbonSaved.textContent = carbonSaved.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   totalWaterSaved.textContent = waterSaved.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 });

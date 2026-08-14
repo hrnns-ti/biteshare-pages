@@ -6,8 +6,6 @@ contactForm.addEventListener('submit', async function(event) {
   const formData = new FormData(contactForm);
   const payload = Object.fromEntries(formData.entries()); 
 
-  console.log("Data yang akan dikirim:", payload);
-
   const endpoint = 'http://localhost:3000/api/contact/send'; 
 
   try {
